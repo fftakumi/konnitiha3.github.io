@@ -7,6 +7,7 @@
   "keywords": [
     "gatsby"
   ],
+  "homepage": "https://konnitiha3.github.io/",
   "scripts": {
     "develop": "gatsby develop",
     "start": "gatsby develop",
@@ -14,7 +15,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "deploy": "gatsby build && cp -pvr public/* ../ && git add ../ && git commit -m 'Deploy to production' && git push"
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
