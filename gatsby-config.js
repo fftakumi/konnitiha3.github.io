@@ -4,7 +4,21 @@ module.exports = {
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
-    "gatsby-plugin-image", "gatsby-plugin-mdx",
+    "gatsby-plugin-image",
+    "gatsby-plugin-mdx",
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        remarkPlugins: [
+          require('remark-math'),
+        ],
+        rehypePlugins: [
+          require('rehype-katex'),
+          // オプションを渡したい時はタプル形式で
+          // [require('rehype-katex'), { strict: 'ignore' }],
+        ],
+      }
+    },
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",

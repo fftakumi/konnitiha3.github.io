@@ -3,6 +3,8 @@ import { graphql } from 'gatsby'
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from '../../components/layout'
 
+import 'katex/dist/katex.min.css'
+
 const BlogPost = ({ data }) => {
     return (
         <Layout pageTitle={data.mdx.frontmatter.title}>

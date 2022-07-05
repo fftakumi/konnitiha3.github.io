@@ -2,6 +2,8 @@ import * as React from 'react'
 import { Link, graphql } from 'gatsby'
 import Layout from '../../components/layout'
 
+import 'katex/dist/katex.min.css'
+
 const BlogPage = ({ data }) => {
     return (
         <Layout pageTitle="My Blog Posts">
