@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="" />
+    <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="add plotly">
+      <change beforePath="$PROJECT_DIR$/another-post/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/another-post/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/another-post/image2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/another-post/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/llg-equation/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/my-first-post/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/my-first-post/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/yet-another-post/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/yet-another-post/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/llg-equation/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-post/image1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/my-first-post/index.mdx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yet-another-post/image3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yet-another-post/index.mdx" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -21,7 +36,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/blog" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -32,18 +47,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io/blog&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog" />
@@ -69,7 +84,8 @@
       <workItem from="1656986330961" duration="28767000" />
       <workItem from="1657067945631" duration="5965000" />
       <workItem from="1657173837036" duration="873000" />
-      <workItem from="1657186301557" duration="3005000" />
+      <workItem from="1657186301557" duration="2562000" />
+      <workItem from="1657253427981" duration="304000" />
     </task>
     <task id="LOCAL-00001" summary="reset">
       <created>1656992512699</created>
@@ -170,11 +186,11 @@
       <updated>1657186327284</updated>
     </task>
     <task id="LOCAL-00015" summary="add plotly">
-      <created>1657253220533</created>
+      <created>1657253462664</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1657253220533</updated>
+      <updated>1657253462664</updated>
     </task>
     <option name="localTasksCounter" value="16" />
     <servers />
