@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/blog" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2BTrrfpaTfYKgkJd0jryYTutDde" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io/blog&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog" />
+      <recent name="$PROJECT_DIR$/blog/src/images" />
+      <recent name="$PROJECT_DIR$/blog/src" />
+      <recent name="$PROJECT_DIR$/blog/src/pages" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/blog/yet-another-post" />
+      <recent name="$PROJECT_DIR$/blog/blog/another-post" />
+      <recent name="$PROJECT_DIR$/blog/blog/my-first-post" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="デフォルトタスク">
+      <changelist id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="" />
+      <created>1656941116093</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1656941116093</updated>
+      <workItem from="1656941117242" duration="1708000" />
+      <workItem from="1656986330961" duration="28767000" />
+      <workItem from="1657067945631" duration="5965000" />
+      <workItem from="1657173837036" duration="873000" />
+      <workItem from="1657186301557" duration="3005000" />
+    </task>
+    <task id="LOCAL-00001" summary="reset">
+      <created>1656992512699</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1656992512699</updated>
+    </task>
+    <task id="LOCAL-00002" summary="reset">
+      <created>1656993978402</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1656993978402</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial">
+      <created>1656996132556</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1656996132556</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial">
+      <created>1656997350462</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1656997350462</updated>
+    </task>
+    <task id="LOCAL-00005" summary="hero image">
+      <created>1657000534396</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657000534396</updated>
+    </task>
+    <task id="LOCAL-00006" summary="hero image">
+      <created>1657001154579</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1657001154579</updated>
+    </task>
+    <task id="LOCAL-00007" summary="add three and build">
+      <created>1657002893638</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657002893638</updated>
+    </task>
+    <task id="LOCAL-00008" summary="add three and build">
+      <created>1657002901380</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657002901380</updated>
+    </task>
+    <task id="LOCAL-00009" summary="clean">
+      <created>1657006347499</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657006347499</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add">
+      <created>1657013101932</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657013101932</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add three drei">
+      <created>1657013247788</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1657013247788</updated>
+    </task>
+    <task id="LOCAL-00012" summary="add plotly">
+      <created>1657016096355</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1657016096355</updated>
+    </task>
+    <task id="LOCAL-00013" summary="add plotly">
+      <created>1657173930266</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657173930266</updated>
+    </task>
+    <task id="LOCAL-00014" summary="add plotly">
+      <created>1657186327284</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657186327284</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add plotly">
+      <created>1657253220533</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1657253220533</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="reset" />
+    <MESSAGE value="initial" />
+    <MESSAGE value="hero image" />
+    <MESSAGE value="add three and build" />
+    <MESSAGE value="clean" />
+    <MESSAGE value="add" />
+    <MESSAGE value="add three drei" />
+    <MESSAGE value="add plotly" />
+    <option name="LAST_COMMIT_MESSAGE" value="add plotly" />
+  </component>
+</project>
