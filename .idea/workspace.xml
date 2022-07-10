@@ -1,21 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="add plotly">
-      <change beforePath="$PROJECT_DIR$/another-post/image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/another-post/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/another-post/image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/another-post/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/llg-equation/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/my-first-post/image1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/my-first-post/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/yet-another-post/image3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/yet-another-post/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/llg-equation/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-first-post/image1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/my-first-post/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yet-another-post/image3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yet-another-post/index.mdx" beforeDir="false" />
+    <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
+      <change afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/blog/magneto-optics-effect/index.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/blog/super-ball/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/super-ball/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/page-data/blog/page-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/public/page-data/blog/page-data.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/page-data/sq/d/3159585216.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/public/page-data/sq/d/3159585216.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,7 +33,7 @@
         <entry key="$PROJECT_DIR$" value="main" />
       </map>
     </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/blog" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,6 +51,7 @@
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io",
     "list.type.of.created.stylesheet": "CSS",
+    "nodejs.jest.jest_package": "",
     "nodejs_package_manager_path": "npm",
     "prettierjs.PrettierConfiguration.Package": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier",
     "vue.rearranger.settings.migration": "true"
@@ -85,7 +83,8 @@
       <workItem from="1657067945631" duration="5965000" />
       <workItem from="1657173837036" duration="873000" />
       <workItem from="1657186301557" duration="2562000" />
-      <workItem from="1657253427981" duration="304000" />
+      <workItem from="1657253427981" duration="989000" />
+      <workItem from="1657372507558" duration="7647000" />
     </task>
     <task id="LOCAL-00001" summary="reset">
       <created>1656992512699</created>
@@ -192,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657253462664</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="add plotly">
+      <created>1657253750186</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1657253750186</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
