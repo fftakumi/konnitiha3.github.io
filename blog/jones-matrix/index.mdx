@@ -1,0 +1,192 @@
+---
+title: "偏光素子(ジョーンズ行列)"
+date: "2022-07-09"
+---
+
+偏光子や波長板による偏光状態の変更はジョーンズ行列$J$によって一般に、
+$$
+\begin{aligned}
+\begin{pmatrix}
+E_x^{'} \\
+E_y^{'} \\
+\end{pmatrix}
+=J
+\begin{pmatrix}
+E_x \\
+E_y \\
+\end{pmatrix}
+\end{aligned}
+$$
+と表す。
+
+## 回転行列
+$x,y$軸上の点を$\theta$回転させるには、回転行列$R$を用いて、
+$$
+\begin{aligned}
+\begin{pmatrix}
+x^{'} \\
+y^{'} \\
+\end{pmatrix}
+&=R
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix} \\
+&=
+\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+x \\
+y \\
+\end{pmatrix}
+\end{aligned}
+$$
+と表せる。よって電場も同じく、
+
+$$
+\begin{aligned}
+\begin{pmatrix}
+E_x^{'} \\
+E_y^{'} \\
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+E_x \\
+E_y \\
+\end{pmatrix}
+\end{aligned}
+$$
+
+として表せる。
+
+## 偏光子、検光子
+偏光子を通る光は透過軸に沿った直線変更になる。透過軸が、$\phi=\pi/4$または$\theta=-\pi/4$である時、$x$軸のみ透過させる行列
+$$
+\begin{aligned}
+T=
+\begin{pmatrix}
+1 & 0 \\
+0 & 0 \\
+\end{pmatrix}
+\end{aligned}
+$$
+を用いて、
+$$
+\begin{aligned}
+E^{'}&=RTR^{-1}E \\
+\begin{pmatrix}
+E_x^{'} \\
+E_y^{'} \\
+\end{pmatrix}
+&=
+\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+1 & 0 \\
+0 & 0 \\
+\end{pmatrix}
+\begin{pmatrix}
+\cos \theta & \sin \theta \\
+-\sin \theta & \cos \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+E_x \\
+E_y \\
+\end{pmatrix} \\
+&=
+\begin{pmatrix}
+\cos^2 \theta & \sin \theta \cos \theta \\
+\sin \theta \cos \theta & \sin^2 \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+E_x \\
+E_y \\
+\end{pmatrix} \\
+&=
+\begin{pmatrix}
+\cos^2 \theta & \dfrac{1}{2} \sin (2\theta) \\
+\dfrac{1}{2} \sin (2\theta) & \sin^2 \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+E_x \\
+E_y \\
+\end{pmatrix}
+\end{aligned}
+$$
+と表すことができる。よって$x$軸から右回りに$\phi$回転した偏光子のジョーンズ行列$T_\phi$は
+$$
+\begin{aligned}
+T_\phi=
+\begin{pmatrix}
+\cos^2 \theta & \dfrac{1}{2} \sin (2\theta) \\
+\dfrac{1}{2} \sin (2\theta) & \sin^2 \theta \\
+\end{pmatrix}
+\end{aligned}
+$$
+である。
+
+## 波長板
+$x$軸にfast軸をもつ波長板に置いて、位相を$\delta$だけ進める行列$M$は
+$$
+\begin{aligned}
+M=
+\begin{pmatrix}
+e^{i\dfrac{\delta}{2}} & 0 \\
+0 & e^{-i\dfrac{\delta}{2}} \\
+\end{pmatrix}
+\end{aligned}
+$$
+として表せる。この波長板が$x$軸から$\theta$だけ傾いて入れば、波長板を通過する電場は
+$$
+\begin{aligned}
+E^{'} &= RMR^{-1}E \\
+\begin{pmatrix}
+E_x^{'} \\
+E_y^{'} \\
+\end{pmatrix}
+&=
+\begin{pmatrix}
+\cos \theta & -\sin \theta \\
+\sin \theta & \cos \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+e^{i\dfrac{\delta}{2}} & 0 \\
+0 & e^{-i\dfrac{\delta}{2}} \\
+\end{pmatrix}
+\begin{pmatrix}
+\cos \theta & \sin \theta \\
+-\sin \theta & \cos \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+E_x \\
+E_y \\
+\end{pmatrix} \\
+&=
+\begin{pmatrix}
+e^{i\dfrac{\delta}{2}}\cos^2 \theta + e^{-i\dfrac{\delta}{2}}\sin^2 \theta & i\sin(2\theta) \sin\left( \dfrac{\delta}{2}\right) \\
+i\sin(2\theta)\sin\left( \dfrac{\delta}{2}\right) & e^{i\dfrac{\delta}{2}}\sin^2 \theta + e^{-i\dfrac{\delta}{2}}\cos^2 \theta \\
+\end{pmatrix}
+\begin{pmatrix}
+E_x \\
+E_y \\
+\end{pmatrix}
+\end{aligned}
+$$
+
+よってfast軸が$x$軸から右回りに$\theta$傾いて、fast軸を$\delta$だけ早める波長板のジョーンズ行列は
+$$
+M_{\theta, \delta} =
+\begin{pmatrix}
+e^{i\dfrac{\delta}{2}}\cos^2 \theta + e^{-i\dfrac{\delta}{2}}\sin^2 \theta & i\sin(2\theta) \sin\left( \dfrac{\delta}{2}\right) \\
+i\sin(2\theta) \sin\left( \dfrac{\delta}{2}\right) & e^{i\dfrac{\delta}{2}}\sin^2 \theta + e^{-i\dfrac{\delta}{2}}\cos^2 \theta \\
+\end{pmatrix}
+$$
+となる。
