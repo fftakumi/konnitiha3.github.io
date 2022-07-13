@@ -2,25 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/src/images/blog/jones-matrix/theta_depend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/blog/test-post/theta_depend.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/page-data/404.html/page-data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/page-data/about/page-data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/page-data/blog/page-data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/page-data/index/page-data.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/page-data/sq/d/3159585216.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-atomics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-media.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-sandbox-sw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-sw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-ww-atomics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-ww-sw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown-atomics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown-media.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown-sw.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/blog/test-post/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/test-post/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/images/theta_depend.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/theta_depend.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +46,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/blog/jones-matrix",
+    "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/blog/test-post",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs.jest.jest_package": "",
     "nodejs_package_manager_path": "npm",
@@ -67,18 +56,18 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/blog/test-post" />
       <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
       <recent name="$PROJECT_DIR$/blog" />
       <recent name="$PROJECT_DIR$/blog/src/images" />
       <recent name="$PROJECT_DIR$/blog/src" />
-      <recent name="$PROJECT_DIR$/blog/src/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
       <recent name="$PROJECT_DIR$/blog/src/images/blog/jones-matrix" />
       <recent name="$PROJECT_DIR$/blog/src/components" />
       <recent name="$PROJECT_DIR$/blog/blog/yet-another-post" />
       <recent name="$PROJECT_DIR$/blog/blog/another-post" />
-      <recent name="$PROJECT_DIR$/blog/blog/my-first-post" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
