@@ -2,23 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/src/components/blog-card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/src/components/blog-card.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/blog/jones-matrix/theta_depend.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/another-post/image2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/another-post/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/magneto-optics-effect/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/my-first-post/image1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/test-post/image1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/my-first-post/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/test-post/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/yet-another-post/image3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/yet-another-post/index.mdx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/page-data/blog/page-data.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/public/page-data/blog/page-data.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/public/page-data/sq/d/3159585216.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/public/page-data/sq/d/3159585216.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/pages/blog/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/pages/blog/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/page-data/404.html/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/page-data/about/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/page-data/blog/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/page-data/index/page-data.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/page-data/sq/d/3159585216.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-atomics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-sandbox-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-ww-atomics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown-ww-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/debug/partytown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown-atomics.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown-media.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown-sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/public/~partytown/partytown.js" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,27 +52,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;nodejs.jest.jest_package&quot;: &quot;&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/blog/jones-matrix",
+    "list.type.of.created.stylesheet": "CSS",
+    "nodejs.jest.jest_package": "",
+    "nodejs_package_manager_path": "npm",
+    "prettierjs.PrettierConfiguration.Package": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
       <recent name="$PROJECT_DIR$/blog" />
       <recent name="$PROJECT_DIR$/blog/src/images" />
       <recent name="$PROJECT_DIR$/blog/src" />
       <recent name="$PROJECT_DIR$/blog/src/pages" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/src/images/blog/jones-matrix" />
       <recent name="$PROJECT_DIR$/blog/src/components" />
       <recent name="$PROJECT_DIR$/blog/blog/yet-another-post" />
       <recent name="$PROJECT_DIR$/blog/blog/another-post" />
@@ -92,7 +96,7 @@
       <workItem from="1657186301557" duration="2562000" />
       <workItem from="1657253427981" duration="989000" />
       <workItem from="1657372507558" duration="11622000" />
-      <workItem from="1657674537682" duration="2663000" />
+      <workItem from="1657674537682" duration="5713000" />
     </task>
     <task id="LOCAL-00001" summary="reset">
       <created>1656992512699</created>
@@ -213,7 +217,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657459604326</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="delete ploty &#10;add post">
+      <created>1657677289568</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657677289568</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,6 +262,7 @@
     <MESSAGE value="add" />
     <MESSAGE value="add three drei" />
     <MESSAGE value="add plotly" />
-    <option name="LAST_COMMIT_MESSAGE" value="add plotly" />
+    <MESSAGE value="delete ploty &#10;add post" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete ploty &#10;add post" />
   </component>
 </project>
