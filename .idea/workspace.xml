@@ -2,12 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/gatsby-browser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/index.mdx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/global.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/test-post/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/test-post/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-browser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -45,7 +51,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/blog/test-post",
+    "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/blog/feature-point-matching-affine",
     "list.type.of.created.stylesheet": "CSS",
     "nodejs.jest.jest_package": "",
     "nodejs_package_manager_path": "npm",
@@ -55,11 +61,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/blog/feature-point-matching-affine" />
       <recent name="$PROJECT_DIR$/blog/blog/test-post" />
       <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
       <recent name="$PROJECT_DIR$/blog" />
       <recent name="$PROJECT_DIR$/blog/src/images" />
-      <recent name="$PROJECT_DIR$/blog/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
@@ -219,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657682822857</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="add syntax">
+      <created>1657683983709</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657683983709</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +272,7 @@
     <MESSAGE value="add plotly" />
     <MESSAGE value="delete ploty &#10;add post" />
     <MESSAGE value="add remark image" />
-    <option name="LAST_COMMIT_MESSAGE" value="add remark image" />
+    <MESSAGE value="add syntax" />
+    <option name="LAST_COMMIT_MESSAGE" value="add syntax" />
   </component>
 </project>
