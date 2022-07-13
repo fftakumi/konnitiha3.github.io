@@ -2,13 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/blog/test-post/theta_depend.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/gatsby-browser.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/blog/test-post/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/test-post/index.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/images/theta_depend.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/theta_depend.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -213,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657677289568</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add remark image">
+      <created>1657682822857</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1657682822857</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -252,6 +258,7 @@
     <MESSAGE value="add three drei" />
     <MESSAGE value="add plotly" />
     <MESSAGE value="delete ploty &#10;add post" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete ploty &#10;add post" />
+    <MESSAGE value="add remark image" />
+    <option name="LAST_COMMIT_MESSAGE" value="add remark image" />
   </component>
 </project>
