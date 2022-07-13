@@ -1,0 +1,4 @@
+.math-display {
+    overflow-x: scroll;
+    overflow-y: hidden;
+}

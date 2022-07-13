@@ -7,6 +7,7 @@ import {
     navLinkItem,
     navLinkText,
     siteTitle,
+    siteFooter
 } from './layout.module.css'
 
 const Layout = ({ pageTitle, children }) => {
@@ -49,6 +50,7 @@ const Layout = ({ pageTitle, children }) => {
                     {children}
                 </main>
             </div>
+            <footer className={siteFooter}></footer>
         </>
     )
 }
