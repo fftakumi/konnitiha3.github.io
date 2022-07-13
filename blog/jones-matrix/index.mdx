@@ -134,6 +134,29 @@ $$
 となります。
 Pythonで実装してみます。x軸方向に偏向面をもつ電場を用意して、検光子の角度を変えて、通り抜けてきた光の強度をプロットしてみます。
 
+```python
+E_in = np.array([1, 0]).reshape([-1,1]) * np.exp(1.0j) # 電場の列ベクトル
+
+theta = np.linspace(-np.pi, np.pi, 100) # 検光子の角度
+
+T_theta = np.array([[np.cos(theta)**2, np.sin(2*theta)/2],
+                    [np.sin(2*theta)/2, np.sin(theta)**2]]) # 検光子のジョーンズ行列
+
+E_out = []
+for i in range(len(theta)):
+    E_out.append(T_theta[:,:,i] @ E_in) # 各角度ごとにジョーンズ行列をE_inに作用
+
+E_out = np.array(E_out)
+I = np.abs(E_out[:, 0, 0]) **2 + np.abs(E_out[:, 1, 0])**2 # 電場から光強度へ
+
+# プロット
+plt.plot(theta, I)
+plt.xticks(np.arange(-np.pi, np.pi+0.1, np.pi/2), [r"$-\pi$", r"$-\pi/2$", "0", r"$\pi/2$", r"$\pi$"])
+plt.xlabel("$\\theta$")
+plt.ylabel("Intensity")
+plt.show()
+```
+
 ![test](./theta_depend.png "test")
 
 $\theta=0$で最大となり、偏向面と直角になる$\theta=\pi/2$で光強度が0となることがわかります。

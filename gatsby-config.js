@@ -10,6 +10,7 @@ module.exports = {
       resolve: 'gatsby-plugin-mdx',
       options: {
         gatsbyRemarkPlugins: [
+          "gatsby-remark-prismjs",
           {
             resolve: `gatsby-remark-images`,
             options: {
