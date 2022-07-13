@@ -20,12 +20,13 @@
 }
 
 .site-title {
-    font-size: 2rem;
+    font-size: 1.5rem;
     color: gray;
     font-weight: 700;
-    padding: 0.5rem 0.5rem;
+    padding: 1rem 1rem;
     font-family: sans-serif;
-    background: -moz-linear-gradient(left, #d1c6f3, #e9bcac);
+    /*background: -moz-linear-gradient(left, #d1c6f3, #e9bcac);
     background: -webkit-linear-gradient(left, #d1c6f3, #e9bcac);
-    background: linear-gradient(to right, #d1c6f3, #e9bcac);
+    background: linear-gradient(to right, #d1c6f3, #e9bcac);*/
+    background-color: #d1c6f3;
 }

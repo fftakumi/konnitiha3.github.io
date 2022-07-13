@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `magmagchi.com`,
+    title: `magmagchi`,
     siteUrl: `https://www.magmagchi.com`
   },
   plugins: [

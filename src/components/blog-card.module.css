@@ -1,0 +1,8 @@
+.blog-card-wrapper {
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow:  14px 14px 31px #dbdbdb,
+    -14px -14px 31px #ffffff;
+    padding: 0.5rem;
+    margin:1rem
+}
