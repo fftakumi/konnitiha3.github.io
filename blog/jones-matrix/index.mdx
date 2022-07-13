@@ -17,17 +17,17 @@ E_y \\
 \end{pmatrix}
 \end{aligned}
 $$
-と表す。
+と表せます。
 
 ## 回転行列
-$x,y$軸上の点を$\theta$回転させるには、回転行列$R$を用いて、
+最初に回転行列だけ定義しておきます。$x,y$軸上の点を$\theta$回転させるには、回転行列$R$を用いて、
 $$
 \begin{aligned}
 \begin{pmatrix}
 x^{'} \\
 y^{'} \\
 \end{pmatrix}
-&=R
+&=R(\theta)
 \begin{pmatrix}
 x \\
 y \\
@@ -43,7 +43,7 @@ y \\
 \end{pmatrix}
 \end{aligned}
 $$
-と表せる。よって電場も同じく、
+と表せます。よって電場も同じく、
 
 $$
 \begin{aligned}
@@ -63,10 +63,10 @@ E_y \\
 \end{aligned}
 $$
 
-として表せる。
+となります。
 
 ## 偏光子、検光子
-偏光子を通る光は透過軸に沿った直線変更になる。透過軸が、$\phi=\pi/4$または$\theta=-\pi/4$である時、$x$軸のみ透過させる行列
+偏光子を通る光は透過軸に沿った直線変更になるため、透過軸が、$x$軸のみ透過させる行列
 $$
 \begin{aligned}
 T=
@@ -79,7 +79,7 @@ $$
 を用いて、
 $$
 \begin{aligned}
-E^{'}&=RTR^{-1}E \\
+E^{'}&=R(\theta)TR(\theta)^{-1}E \\
 \begin{pmatrix}
 E_x^{'} \\
 E_y^{'} \\
@@ -121,17 +121,20 @@ E_y \\
 \end{pmatrix}
 \end{aligned}
 $$
-と表すことができる。よって$x$軸から右回りに$\phi$回転した偏光子のジョーンズ行列$T_\phi$は
+と表すことが出来ます。$R(\theta)^{-1}$は$R(\theta)$の逆回転です。よって$x$軸から右回りに$\theta$回転した偏光子のジョーンズ行列$T_\theta$は
 $$
 \begin{aligned}
-T_\phi=
+T_\theta=
 \begin{pmatrix}
 \cos^2 \theta & \dfrac{1}{2} \sin (2\theta) \\
 \dfrac{1}{2} \sin (2\theta) & \sin^2 \theta \\
 \end{pmatrix}
 \end{aligned}
 $$
-である。
+となります。
+Pythonで実装してみます。x軸方向に偏向面をもつ電場を用意して、検光子の角度を変えて、通り抜けてきた光の強度をプロットしてみます。
+
+![theta_depned]("../src/images/theta_depned.png")
 
 ## 波長板
 $x$軸にfast軸をもつ波長板に置いて、位相を$\delta$だけ進める行列$M$は
@@ -144,7 +147,7 @@ e^{i\dfrac{\delta}{2}} & 0 \\
 \end{pmatrix}
 \end{aligned}
 $$
-として表せる。この波長板が$x$軸から$\theta$だけ傾いて入れば、波長板を通過する電場は
+として表せます。この波長板が$x$軸から$\theta$だけ傾いて入れば、波長板を通過する電場は次のように表せます。
 $$
 \begin{aligned}
 E^{'} &= RMR^{-1}E \\
@@ -180,7 +183,6 @@ E_y \\
 \end{pmatrix}
 \end{aligned}
 $$
-
 よってfast軸が$x$軸から右回りに$\theta$傾いて、fast軸を$\delta$だけ早める波長板のジョーンズ行列は
 $$
 M_{\theta, \delta} =
@@ -189,4 +191,5 @@ e^{i\dfrac{\delta}{2}}\cos^2 \theta + e^{-i\dfrac{\delta}{2}}\sin^2 \theta & i\s
 i\sin(2\theta) \sin\left( \dfrac{\delta}{2}\right) & e^{i\dfrac{\delta}{2}}\sin^2 \theta + e^{-i\dfrac{\delta}{2}}\cos^2 \theta \\
 \end{pmatrix}
 $$
-となる。
+となります。
+
