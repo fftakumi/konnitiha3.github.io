@@ -1,12 +1,12 @@
 ---
-title: "アフィン変換を使った特徴点マッチングにおけるアフィン行列を求める"
+title: "アフィン変換を使った特徴点マッチングで雑すぎるコラ画像を作る"
 date: "2022-07-14"
 ---
 
 
 # はじめに
 特徴点マッチングにおいてのアフィン行列を求める記事です。この記事では特徴点を手動で決めることとします。
-![affine.gif](./image2.png)
+![affine.gif](./image1.png)
 こんな感じで2枚の画像の特徴点をクリックして特徴点を指定して、それに合うように片方の画像をアフィン変換によって変形させて重ねることが目的です。
 
 # 特徴点マッチング
@@ -204,7 +204,7 @@ y^{'}_{n}&=p_{n}w_2
 \end{aligned}
 $$
 
-と書けます。変換先の座標とアフィン変換による返還後の座標の距離を誤差関数にして、誤差関数が一番小さくなる時の $w_1$ と$w_2$を求めます。
+と書けます。変換先の座標とアフィン変換による変換後の座標の距離を誤差関数にして、誤差関数が一番小さくなる時の $w_1$ と$w_2$を求めます。
 誤差関数$E$を
 
 $$
@@ -348,12 +348,13 @@ def affine(data, affine, draw_area_size):
     for direction in liner_weight.keys():
         l_xy = liner_xy[direction]
         l_xy = clip_xy(l_xy, data.shape)
-        l_xy = np.dstack([l_xy[:, 0].reshape(draw_area_size), l_xy[:, 1].reshape(draw_area_size)])
-        l_weight = liner_weight[direction].reshape(draw_area_size)
-        liner_with_weight[direction] = data[l_xy[:, :, 1], l_xy[:, :, 0]] * l_weight
+        l_xy = np.dstack([l_xy[:, 0].reshape([draw_area_size[0], draw_area_size[1]]), l_xy[:, 1].reshape([draw_area_size[0], draw_area_size[1]])])
+        l_weight = liner_weight[direction].reshape([draw_area_size[0], draw_area_size[1]])
+        l_weight = np.repeat(np.expand_dims(l_weight, axis=-1), 4, axis=-1) # chanel 方向にコピー
+        liner_with_weight[direction] = data[l_xy[:, :, 1], l_xy[:, :, 0], :] * l_weight
 
     data_linear = sum(liner_with_weight.values())
-    return data_linear
+    return np.ceil(data_linear).astype(np.int64)
 
 
 # 特徴点からアフィン行列求める関数
@@ -392,7 +393,6 @@ def onclick(event):
         else:
             future_points1 = np.vstack([future_points1, np.array([x, y])])
             count_fp1 += count_fp1
-        print(future_points1)
     if click_axes == ax2:
         if count_fp2 == 0:
             future_points2[0, :] = (x, y)
@@ -400,12 +400,11 @@ def onclick(event):
         else:
             future_points2 = np.vstack([future_points2, np.array([x, y])])
             count_fp2 += count_fp2
-        print(future_points2)
     click_axes.scatter(x, y)
     fig.canvas.draw_idle()
 
 
-# エンターおすと画像重ね合わせ
+# エンターを押すと画像重ね合わせ
 def onEnter(event):
     if event.key == 'enter' and future_points1.size == future_points2.size and future_points1.size >= 3:
         # P:変換元の座標行列([[x,y,1],[x,y,1],...]
@@ -418,48 +417,54 @@ def onEnter(event):
         affine_matrix = registration(P, x_dash, y_dash)
         # アフィン変換後の画像求める
         affined_image = affine(image2, affine_matrix, image1.shape)
-        x = np.arange(0, affined_image.shape[1], 1)
-        y = np.arange(0, affined_image.shape[0], 1)
-        X_affined, Y_affined = np.meshgrid(x, y)
-        ax3.pcolormesh(X_affined, Y_affined, affined_image, cmap='gray', shading='auto', alpha=0.5)
+        ax3.imshow(affined_image)
+        ax4.imshow(affined_image, alpha=0.5)
         fig.canvas.draw_idle()
 
 
-if __name__ == '__main__':
-    # 画像読み込み
-    image1_path = 'images/Mandrill.bmp'
-    image2_path = 'images/Lenna.bmp'
-    image1 = np.array(Image.open(image1_path).convert('L'))
-    image2 = np.array(Image.open(image2_path).convert('L'))
-    # 画像の最後にbg_colorの色追加
-    bg_color = 256
-    image2 = np.hstack([image2, bg_color * np.ones((image2.shape[0], 1), int)])
-    image2 = np.vstack([image2, bg_color * np.ones((1, image2.shape[1]), int)])
 
-    x_image1 = np.arange(0, image1.shape[1], 1)
-    y_image1 = np.arange(0, image1.shape[0], 1)
+# 画像読み込み
+image1_path = 'images/Lenna.bmp'
+image2_path = 'images/Mandrill.bmp'
+image1 = Image.open(image1_path)
+image1.putalpha(255)
+image1 = np.array(image1)
+image2 = Image.open(image2_path)
+image2.putalpha(255)
+image2 = np.array(image2)
 
-    X1, Y1 = np.meshgrid(x_image1, y_image1)
+# 画像の最後にbg_colorの色追加
+bg_color = np.array([[[255,255,255,0]]])
+image2 = np.hstack([image2, bg_color * np.ones((image2.shape[0], 1, 1), int)])
+image2 = np.vstack([image2, bg_color * np.ones((1, image2.shape[1], 1), int)])
 
-    x_image2 = np.arange(0, image2.shape[1], 1)
-    y_image2 = np.arange(0, image2.shape[0], 1)
+x_image1 = np.arange(0, image1.shape[1], 1)
+y_image1 = np.arange(0, image1.shape[0], 1)
 
-    X2, Y2 = np.meshgrid(x_image2, y_image2)
+X1, Y1 = np.meshgrid(x_image1, y_image1)
 
-    fig = plt.figure(figsize=(8, 8))
-    ax1 = fig.add_subplot(221)
-    mesh1 = ax1.pcolormesh(X1, Y1, image1, shading='auto', cmap='gray')
-    ax1.invert_yaxis()
-    ax2 = fig.add_subplot(223)
-    mesh2 = ax2.pcolormesh(X2, Y2, image2, shading='auto', cmap='gray')
-    ax2.invert_yaxis()
-    ax3 = fig.add_subplot(222)
-    mesh3 = ax3.pcolormesh(X1, Y1, image1, shading='auto', cmap='gray', alpha=0.5)
-    ax3.invert_yaxis()
+x_image2 = np.arange(0, image2.shape[1], 1)
+y_image2 = np.arange(0, image2.shape[0], 1)
 
-    cid = fig.canvas.mpl_connect('button_press_event', onclick)
-    cid = fig.canvas.mpl_connect('key_press_event', onEnter)
-    plt.show()
+X2, Y2 = np.meshgrid(x_image2, y_image2)
+
+fig = plt.figure(figsize=(8, 8))
+ax1 = fig.add_subplot(221)
+ax1.set_title("image1")
+mesh1 = ax1.imshow(image1)
+ax2 = fig.add_subplot(223)
+ax2.set_title("image2")
+mesh2 = ax2.imshow(image2)
+ax3 = fig.add_subplot(222)
+ax3.set_title("paste")
+mesh3 = ax3.imshow(image1)
+ax4 = fig.add_subplot(224)
+ax4.set_title("alpha blend")
+mesh4 = ax4.imshow(image1, alpha=0.5)
+
+cid = fig.canvas.mpl_connect('button_press_event', onclick)
+cid = fig.canvas.mpl_connect('key_press_event', onEnter)
+plt.show()
 ```
 
 
