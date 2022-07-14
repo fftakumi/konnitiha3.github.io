@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/index.mdx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blog/global.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/html.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/jones-matrix/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-browser.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image1.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,10 +55,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog/blog/feature-point-matching-affine" />
+      <recent name="$PROJECT_DIR$/blog/src" />
       <recent name="$PROJECT_DIR$/blog/blog/test-post" />
       <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
       <recent name="$PROJECT_DIR$/blog" />
-      <recent name="$PROJECT_DIR$/blog/src/images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
@@ -232,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657683983709</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add syntax">
+      <created>1657722555586</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1657722555586</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
