@@ -2,12 +2,360 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/src/html.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/blog/llg-equation/llg.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/components/app/reflectance.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/components/twitter-card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/facebook_cover_photo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/facebook_cover_photo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/facebook_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/image1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/instagram_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/linkedin_banner_image_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/linkedin_banner_image_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/linkedin_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/logo_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/pinterest_board_photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/pinterest_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/twitter_header_photo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/twitter_header_photo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/twitter_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/images/youtube_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog/src/pages/app/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/AnimationClipCreator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/BlendCharacter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/BlendCharacterGui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/BufferGeometryUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Car.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Cloth.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/CurveExtras.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Detector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Encodings.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/GPUComputationRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/GPUParticleSystem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Gyroscope.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Half.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ImprovedNoise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/MD2Character.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/MD2CharacterComplex.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/MarchingCubes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Mirror.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/MorphAnimMesh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/MorphAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Ocean.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Octree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/PRNG.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ParametricGeometries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/RollerCoaster.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ShaderGodRays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ShaderSkin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ShaderTerrain.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ShaderToon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/SimplexNoise.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/SimulationRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/SkyShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ThreeBSP.coffee" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ThreeBSP.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/TimelinerController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Tween.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/TypedArrayUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/UCSCharacter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ViveController.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/Volume.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/VolumeSlice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/WaterShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/WebVR.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/ammo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/animation/CCDIKSolver.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/animation/MMDPhysics.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cameras/CinematicCamera.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/cameras/CombinedCamera.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/chroma.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/DeviceOrientationControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/DragControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/EditorControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/FirstPersonControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/FlyControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/MouseControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/OrbitControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/OrthographicTrackballControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/PointerLockControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/TrackballControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/TransformControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/controls/VRControls.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/crossfade/gui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/crossfade/scenes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/crossfade/transition.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/curves/NURBSCurve.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/curves/NURBSSurface.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/curves/NURBSUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/d3-threeD.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/dat.gui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/dat.gui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/effects/AnaglyphEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/effects/AsciiEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/effects/CardboardEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/effects/ParallaxBarrierEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/effects/PeppersGhostEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/effects/StereoEffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/effects/VREffect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/exporters/OBJExporter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/exporters/STLBinaryExporter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/exporters/STLExporter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/exporters/TypedGeometryExporter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/geometries/ConvexGeometry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/geometries/DecalGeometry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/geometries/TeapotBufferGeometry.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/geometries/hilbert2D.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/geometries/hilbert3D.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/ammo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/charsetencoder.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/dat.gui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/earcut.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/inflate.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/jszip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/msgpack-js.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/pnltri.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/stats.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/system.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/timeliner_gui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/tween.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/zlib_and_gzip.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/libs/zlib_and_gzip.min.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/css/literally.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/alpha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/eraser.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/eyedropper.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/hue.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/line.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/pan.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/pencil.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/rectangle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/saturation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/img/screenshot.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/jquery-1.8.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/js/literallycanvas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/js/literallycanvas.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/literally/underscore-1.4.2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/3MFLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/AMFLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/AWDLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/AssimpJSONLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/BabylonLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/BinaryLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ColladaLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ColladaLoader2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/DDSLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/FBXLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/GLTFLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/HDRCubeTextureLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/KMZLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/MD2Loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/MMDLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/MTLLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/NRRDLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/OBJLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/PCDLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/PDBLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/PLYLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/PVRLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/PlayCanvasLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/RGBELoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/STLLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/SVGLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/TGALoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/UTF8Loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/VRMLLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/VTKLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/collada/Animation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/collada/AnimationHandler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/collada/KeyFrameAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ctm/CTMLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ctm/CTMWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ctm/ctm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ctm/license/OpenCTM.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ctm/license/js-lzma.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ctm/license/js-openctm.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/ctm/lzma.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/deprecated/SceneLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/gltf/glTF-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/gltf/glTFAnimation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/gltf/glTFLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/gltf/glTFLoaderUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/gltf/glTFShaders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/gltf/gltfUtilities.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/sea3d/SEA3D.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/sea3d/SEA3DDeflate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/sea3d/SEA3DLZMA.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/sea3d/SEA3DLegacy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/loaders/sea3d/SEA3DLoader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/math/ColorConverter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/math/Lut.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/modifiers/BufferSubdivisionModifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/modifiers/ExplodeModifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/modifiers/SubdivisionModifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/modifiers/TessellateModifier.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/BuilderNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/ConstNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/FunctionCallNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/FunctionNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/GLNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/InputNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/NodeLib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/NodeMaterial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/RawNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/TempNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/CameraNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/ColorsNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/LightNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/NormalNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/PositionNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/ReflectNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/ScreenUVNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/accessors/UVNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/ColorNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/CubeTextureNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/FloatNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/IntNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/Matrix4Node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/MirrorNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/ScreenNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/TextureNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/Vector2Node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/Vector3Node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/inputs/Vector4Node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/materials/PhongNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/materials/PhongNodeMaterial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/materials/StandardNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/materials/StandardNodeMaterial.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/math/Math1Node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/math/Math2Node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/math/Math3Node.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/math/OperatorNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/postprocessing/NodePass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/ColorAdjustmentNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/JoinNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/LuminanceNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/NoiseNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/NormalMapNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/ResolutionNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/RoughnessToBlinnExponentNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/SwitchNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/TimerNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/nodes/utils/VelocityNode.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/objects/ShadowMesh.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/perlin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/physi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/physijs_worker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/pmrem/PMREMCubeUVPacker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/pmrem/PMREMGenerator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/AdaptiveToneMappingPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/BloomPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/BokehPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/ClearPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/DotScreenPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/EffectComposer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/FilmPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/GlitchPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/ManualMSAARenderPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/MaskPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/RenderPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/SMAAPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/SavePass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/ShaderPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/TAARenderPass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/postprocessing/TexturePass.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/CSS2DRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/CSS3DRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/CanvasRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/Projector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/RaytracingRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/RaytracingWorker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/SVGRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/renderers/SoftwareRenderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/BasicShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/BleachBypassShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/BlendShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/BokehShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/BokehShader2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/BrightnessContrastShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/ColorCorrectionShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/ColorifyShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/ConvolutionShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/CopyShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/DOFMipMapShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/DigitalGlitch.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/DotScreenShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/EdgeShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/EdgeShader2.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/FXAAShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/FilmShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/FocusShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/FresnelShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/GammaCorrectionShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/HorizontalBlurShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/HorizontalTiltShiftShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/HueSaturationShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/KaleidoShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/LuminosityShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/MirrorShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/NormalMapShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/OceanShaders.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/ParallaxShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/RGBShiftShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/SMAAShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/SSAOShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/SepiaShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/TechnicolorShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/ToneMapShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/TriangleBlurShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/UnpackDepthRGBAShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/VerticalBlurShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/VerticalTiltShiftShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/shaders/VignetteShader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/spin.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/stats.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/stats.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/three.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/three.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/utils/GeometryUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/utils/ImageUtils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/utils/ShadowMapViewer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/libs/utils/UVsDebug.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/facebook_cover_photo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/facebook_cover_photo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/facebook_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/favicon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/instagram_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/linkedin_banner_image_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/linkedin_banner_image_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/linkedin_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logo_transparent.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pinterest_board_photo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/pinterest_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/twitter_header_photo_1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/twitter_header_photo_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/twitter_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/youtube_profile_image.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/LLG.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image1.png" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/image1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/feature-point-matching-affine/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/blog/llg-equation/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/llg-equation/index.mdx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/gatsby-browser.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-browser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/gatsby-config.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/gatsby-config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/layout.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/layout.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/three/llg.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/three/llg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/three/test.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/three/test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/components/three/three.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/three/three.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/pages/about.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/blog/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/pages/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/three/llg.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +365,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -39,33 +387,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/blog/feature-point-matching-affine",
-    "list.type.of.created.stylesheet": "CSS",
-    "nodejs.jest.jest_package": "",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/static&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs.jest.jest_package&quot;: &quot;&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/takumi/WebstormProjects/konnitiha3.github.io/blog/node_modules/prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/blog/blog/feature-point-matching-affine" />
-      <recent name="$PROJECT_DIR$/blog/src" />
-      <recent name="$PROJECT_DIR$/blog/blog/test-post" />
-      <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
-      <recent name="$PROJECT_DIR$/blog" />
+      <recent name="$PROJECT_DIR$/blog/static" />
+      <recent name="$PROJECT_DIR$/blog/src/images" />
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/blog/test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/blog/blog/jones-matrix" />
-      <recent name="$PROJECT_DIR$/blog/src/images/blog/jones-matrix" />
-      <recent name="$PROJECT_DIR$/blog/src/components" />
-      <recent name="$PROJECT_DIR$/blog/blog/yet-another-post" />
-      <recent name="$PROJECT_DIR$/blog/blog/another-post" />
+      <recent name="$PROJECT_DIR$/blog/blog/llg-equation" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/blog/test" />
+      <recent name="$PROJECT_DIR$/blog/src/pages/app" />
+      <recent name="$PROJECT_DIR$/blog/src/pages/index" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="アプリケーションレベル" UseSingleDictionary="true" transferred="true" />
@@ -84,6 +432,7 @@
       <workItem from="1657253427981" duration="989000" />
       <workItem from="1657372507558" duration="11622000" />
       <workItem from="1657674537682" duration="5713000" />
+      <workItem from="1658298548700" duration="5182000" />
     </task>
     <task id="LOCAL-00001" summary="reset">
       <created>1656992512699</created>
@@ -232,7 +581,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657722555586</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="add syntax">
+      <created>1657767345309</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1657767345309</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

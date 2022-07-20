@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example 06.06 - Parametric geometries</title>
+    <script type="text/javascript" src="../libs/three.js"></script>
+
+    <script type="text/javascript" src="../libs/stats.js"></script>
+    <script type="text/javascript" src="../libs/dat.gui.js"></script>
+    <script type="text/javascript" src="../libs/controls/OrbitControls.js"></script>
+    <style>
+        body {
+            /* set margin to 0 and overflow to hidden, to go fullscreen */
+            margin: 0;
+            overflow: hidden;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="Stats-output"></div>
+<div id="WebGL-output"></div>
+
+<script type="text/javascript">
+    function init() {
+        var stats = initStats();
+
+        var scene = new THREE.Scene();
+
+        var camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 1000);
+
+        var webGLRenderer = new THREE.WebGLRenderer();
+        webGLRenderer.setClearColor(new THREE.Color(0xEEEEEE));
+        webGLRenderer.setSize(window.innerWidth, window.innerHeight);
+        webGLRenderer.shadowMap.enabled = true;
+
+        camera.position.x = 2;
+        camera.position.y = 1;
+        camera.position.z = 2;
+        camera.lookAt(new THREE.Vector3(0, 0, 0));
+
+        const orbitcont = new THREE.OrbitControls(camera, document.body)
+
+
+        var spotLight = new THREE.DirectionalLight();
+        spotLight.position = new THREE.Vector3(-20, 250, -50);
+        spotLight.target.position.x = 0;
+        spotLight.target.position.y = 0;
+        spotLight.target.position.z = 0;
+        spotLight.intensity = 0.3;
+        scene.add(spotLight);
+
+        const origin = new THREE.Vector3(0, 0, 0);
+        const vecBeff = new ExVector3(0, 1, 0);
+        const colorBeff = 0x0019D8;　　　　　　　　　　　　　//矢印の色
+        const arrowBeff = new THREE.ArrowHelper(vecBeff.unitVector, origin, vecBeff.norm, colorBeff);
+        scene.add(arrowBeff);
+
+        let vecM = new ExVector3(1/(2**0.5), 1/(2**0.5), 0);
+        const colorM = 0xFF0000;
+        const arrowM = new THREE.ArrowHelper(vecM.unitVector, origin, vecM.norm, colorM);
+        scene.add(arrowM);
+
+        let alpha = 0.02;
+        let gamma = 1;
+        let vecTorque = vecM.mul(-gamma/(1+alpha)).cross(vecBeff);
+        const colorTorque = 0x005DFF;
+        const arrowTorque = new THREE.ArrowHelper(vecTorque.unitVector, vecM, vecTorque.norm, colorTorque)
+        scene.add(arrowTorque)
+
+        //let vecBrak = vecM.mul(-gamma*alpha/(1+alpha**2)).cross((vecM.cross(vecBeff)));
+        let vecBrak = vecM.mul(alpha).cross(vecTorque);
+        const colorBrak = 0x005DFF;
+        const arrowBrak = new THREE.ArrowHelper(vecBrak.unitVector, vecM, vecBrak.norm, colorBrak);
+        scene.add(arrowBrak);
+
+        let dt = 0.01;
+
+        const controls = new function () {
+            this.alpha = alpha;
+            this.gamma = gamma;
+            this.bx = 0;
+            this.by = 1;
+            this.bz = 0;
+            this.dt = dt;
+        }
+
+        const gui = new dat.GUI()
+        gui.add(controls, "alpha", 0, 0.1);
+        gui.add(controls, "gamma", 0, 10);
+        gui.add(controls, "bx", -1, 1);
+        gui.add(controls, "by", -5, 5);
+        gui.add(controls, "bz", -1, 1);
+        gui.add(controls, "dt", 0, 1)
+
+        document.getElementById("WebGL-output").appendChild(webGLRenderer.domElement);
+        render();
+
+        function render() {
+            stats.update();
+            alpha = controls.alpha;
+            gamma = controls.gamma;
+            dt = controls.dt;
+
+            vecBeff.set(controls.bx, controls.by, controls.bz);
+            arrowBeff.setDirection(vecBeff.unitVector);
+            arrowBeff.setLength(vecBeff.norm);
+
+            vecTorque = vecM.mul(-gamma/(1+alpha**2)).cross(vecBeff);
+            arrowTorque.setDirection(vecTorque.unitVector);
+            arrowTorque.setLength(vecTorque.norm);
+            arrowTorque.position.set(vecM.x, vecM.y, vecM.z);
+            vecBrak = vecM.mul(-gamma*alpha/(1+alpha**2)).cross(vecM.cross(vecBeff));
+            arrowBrak.setDirection(vecBrak.unitVector);
+            arrowBrak.setLength(vecBrak.norm);
+            arrowBrak.position.set(vecM.x, vecM.y, vecM.z);
+            const k1 =  vecTorque.add(vecBrak);
+            const k2 = vecM.add(k1.mul(dt/2));
+            const k3 = vecM.add(k2.mul(dt/2));
+            const k4 = vecM.add(k3.mul(dt));
+            vecM = vecM.add((k1.add(k2.mul(2).add(k3.mul(2).add(k4)))).mul(dt/6));
+            vecM = vecM.unitVector;
+            arrowM.setDirection(vecM);
+            arrowM.setLength(vecM.norm);
+
+            requestAnimationFrame(render);
+
+            webGLRenderer.render(scene, camera);
+        }
+
+        function initStats() {
+            var stats = new Stats();
+            stats.setMode(0);
+
+            stats.domElement.style.position = 'absolute';
+            stats.domElement.style.left = '0px';
+            stats.domElement.style.top = '0px';
+
+            document.getElementById("Stats-output").appendChild(stats.domElement);
+
+            return stats;
+        }
+
+        function polToRect(r, phi, theta) {
+            const x = r * Math.sin(theta) * Math.cos(phi);
+            const y = r * Math.sin(theta) * Math.cos(theta);
+            const z = r * Math.cos(theta);
+        }
+
+
+    }
+
+    console.log("a")
+    window.onload = init;
+
+    class ExVector3 extends THREE.Vector3 {
+        constructor(x, y, z) {
+            super(x, y, z);
+        }
+
+        mul(scalar) {
+            return new ExVector3(
+                scalar * this.x,
+                scalar * this.y,
+                scalar * this.z
+            )
+        }
+
+        add(vec) {
+            return new ExVector3(
+                this.x + vec.x,
+                this.y + vec.y,
+                this.z + vec.z
+            )
+        }
+
+        cross(vec) {
+            return new ExVector3(
+                this.y * vec.z - this.z * vec.y,
+                this.z * vec.x - this.x * vec.z,
+                this.x * vec.y - this.y * vec.x
+            )
+        }
+
+        get unitVector() {
+            const norm = this.norm;
+            return new ExVector3(this.x / norm, this.y / norm, this.z / norm);
+        }
+
+        get norm() {
+            return this.length()
+        }
+
+        set pol(vec) {
+            const r = vec.x;
+            const theta = vec.y;
+            const phi = vec.z;
+            const x = r * Math.sin(theta) * Math.cos(phi);
+            const y = r * Math.sin(theta) * Math.cos(theta);
+            const z = r * Math.cos(theta);
+        }
+
+    }
+</script>
+
+</body>
+</html>
