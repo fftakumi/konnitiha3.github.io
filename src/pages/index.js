@@ -6,10 +6,10 @@ import '../style.css'
 const IndexPage = () => {
     return (
         <Layout pageTitle="Home Page">
-            <p>趣味程度で更新していきます</p>
+            <p>科学系プログラミングについcての情報発信サイト</p>
             <StaticImage
                 alt="Clifford, a reddish-brown pitbull, dozing in a bean bag chair"
-                src="../images/icon.png"
+                src="../images/logo.png"
             />
         </Layout>
     )

@@ -162,7 +162,7 @@ $$
 になります。
 
 $$
-w_1=
+\boldsymbol{w}_{1}=
 \left(
 \begin{array}{c}
 a\\
@@ -171,7 +171,7 @@ t_{x}
 \end{array}
 \right)
 ,
-w_2=
+\boldsymbol{w}_{2}=
 \left(
 \begin{array}{c}
 c\\
@@ -180,14 +180,14 @@ t_{y}
 \end{array}
 \right)
 ,
-p_{n}=
+\boldsymbol{p}_{n}=
 \left(
 \begin{array}{c}
 x_{n} & y_{n} & 1
 \end{array}
 \right)
 ,
-p^{'}_{n}=
+\boldsymbol{p}^{'}_{n}=
 \left(
 \begin{array}{c}
 x^{'}_{n} & y^{'}_{n} & 1
@@ -199,48 +199,48 @@ $$
 
 $$
 \begin{aligned}
-x^{'}_{n}&=p_{n}w_1\\
-y^{'}_{n}&=p_{n}w_2
+x^{'}_{n}&=\boldsymbol{p}_{n}\boldsymbol{w}_{1}\\
+y^{'}_{n}&=\boldsymbol{p}_{n}\boldsymbol{w}_{2}
 \end{aligned}
 $$
 
-と書けます。変換先の座標とアフィン変換による変換後の座標の距離を誤差関数にして、誤差関数が一番小さくなる時の $w_1$ と$w_2$を求めます。
+と書けます。変換先の座標とアフィン変換による変換後の座標の距離を誤差関数にして、誤差関数が一番小さくなる時の $\boldsymbol{w}_{1}$ と$\boldsymbol{w}_{2}$を求めます。
 誤差関数$E$を
 
 $$
 E=\sum_{n=1}^{N}
 \Bigl(
-(x^{'}_{n} - p_{n}w_1)^{2} + (y^{'}_{n} - p_{n}w_2)^{2}
+(x^{'}_{n} - \boldsymbol{p}_{n}\boldsymbol{w}_{1})^{2} + (y^{'}_{n} - \boldsymbol{p}_{n}\boldsymbol{w}_{2})^{2}
 \Bigr)
 $$
 
-に設定してこれを行列形式で表すために
+に設定して、これを行列形式で表すために
 
 $$
-X^{'}=
+\boldsymbol{x}^{'} =
 \left(
 \begin{array}{c}
-x^{'}_{1}\\
+x^{'} _{1}\\
 \vdots\\
-x^{'}_{N}
+x^{'} _{N}
 \end{array}
 \right)
 ,
-Y^{'}=
+\boldsymbol{y}^{'} =
 \left(
 \begin{array}{c}
-y^{'}_{1}\\
+y^{'} _{1}\\
 \vdots\\
-y^{'}_{N}
+y^{'} _{N}
 \end{array}
 \right)
 ,
-P=
+\boldsymbol{P}=
 \left(
 \begin{array}{c}
-p_{1}\\
+\boldsymbol{p}_{1}\\
 \vdots\\
-p_{N}
+\boldsymbol{p}_{N}
 \end{array}
 \right)
 =
@@ -257,37 +257,60 @@ $$
 
 $$
 E=
-(X^{'} - Pw_1)^{T}(X^{'} - Pw_1) + (Y^{'} - Pw_2)^T(Y^{'} - Pw_2)
+(\boldsymbol{x}^{'}  - \boldsymbol{P}\boldsymbol{w}_{1})^{T}(\boldsymbol{x}^{'}  - \boldsymbol{P}\boldsymbol{w}_{1}) + (\boldsymbol{y}^{'}  - \boldsymbol{P}\boldsymbol{w}_{2})^T(\boldsymbol{y}^{'}  - \boldsymbol{P}\boldsymbol{w}_{2})
 $$
 
 と書けます。展開すると
 
 $$
 \begin{aligned}
-E&=({X^{'}}^{T} - (Pw_1)^{T})(X^{'} - Pw_1) + ({Y^{'}}^{T} - (Pw_2)^{T})(Y^{'}-Pw_2)\\
-&={X^{'}}^{T}X^{'} - {X^{'}}^{T}Pw_1 - (Pw_1)^{T}X^{'} + (Pw_1)^{T}(Pw_1) + {Y^{'}}^{T}Y^{'} - {Y^{'}}^{T}Pw_2 - (Pw_2)^{T}Y^{'} + (Pw_2)^{T}(Pw_2)\\
-&={X^{'}}^{T}X^{'} - w^{T}_{1}P^{T}{X^{'}}^{T} - w^{T}_{1}P^{T}{X^{'}}^{T} + w^{T}_{1}P^{T}Pw_{1} + {Y^{'}}^{T}Y^{'} - w^{T}_{2}P^{T}{Y^{'}}^{T} - w^{T}_{2}P^{T}{Y^{'}}^{T} + w^{T}_{2}P^{T}Pw_{2}\\
-&={X^{'}}^{T}X^{'} - 2w^{T}_{1}P^{T}{X^{'}}^{T} + w^{T}_{1}P^{T}Pw_{1} + {Y^{'}}^{T}Y^{'} - 2w^{T}_{2}P^{T}{Y^{'}}^{T} + w^{T}_{2}P^{T}Pw_{2}\\
+E&=({\boldsymbol{x}^{'} }^{T} - (\boldsymbol{P}\boldsymbol{w}_{1})^{T})(\boldsymbol{x}^{'}  - \boldsymbol{P}\boldsymbol{w}_{1}) + ({\boldsymbol{y}^{'} }^{T} - (\boldsymbol{P}\boldsymbol{w}_{2})^{T})(\boldsymbol{y}^{'} -\boldsymbol{P}\boldsymbol{w}_{2})\\
+&={\boldsymbol{x}^{'} }^{T}\boldsymbol{x}^{'}  - {\boldsymbol{x}^{'} }^{T}\boldsymbol{P}\boldsymbol{w}_{1} - (\boldsymbol{P}\boldsymbol{w}_{1})^{T}\boldsymbol{x}^{'}  + (\boldsymbol{P}\boldsymbol{w}_{1})^{T}(\boldsymbol{P}\boldsymbol{w}_{1}) + {\boldsymbol{y}^{'} }^{T}\boldsymbol{y}^{'}  - {\boldsymbol{y}^{'} }^{T}\boldsymbol{P}\boldsymbol{w}_{2} - (\boldsymbol{P}\boldsymbol{w}_{2})^{T}\boldsymbol{y}^{'}  + (\boldsymbol{P}\boldsymbol{w}_{2})^{T}(\boldsymbol{P}\boldsymbol{w}_{2})\\
+&={\boldsymbol{x}^{'} }^{T}\boldsymbol{x}^{'}  - \boldsymbol{w}^{T}_{1}\boldsymbol{P}^{T} \boldsymbol{x}^{'} - \boldsymbol{w}^{T}_{1}\boldsymbol{P}^{T} \boldsymbol{x}^{'} + \boldsymbol{w}^{T}_{1}\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{1} + {\boldsymbol{y}^{'} }^{T}\boldsymbol{y}^{'}  - \boldsymbol{w}^{T}_{2}\boldsymbol{P}^{T} \boldsymbol{y}^{'} - \boldsymbol{w}^{T}_{2}\boldsymbol{P}^{T} \boldsymbol{y}^{'} + \boldsymbol{w}^{T}_{2}\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{2}\\
+&={\boldsymbol{x}^{'} }^{T}\boldsymbol{x}^{'}  - 2\boldsymbol{w}^{T}_{1}\boldsymbol{P}^{T} \boldsymbol{x}^{'} + \boldsymbol{w}^{T}_{1}\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{1} + {\boldsymbol{y}^{'} }^{T}\boldsymbol{y}^{'}  - 2\boldsymbol{w}^{T}_{2}\boldsymbol{P}^{T} \boldsymbol{y}^{'} + \boldsymbol{w}^{T}_{2}\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{2}\\
 \end{aligned}
 $$
 
-となります。$w_1$、$w_2$で偏微分して$E$が小さくなる時を求めると
+となります。ここでは
+$$
+\begin{aligned}
+{\boldsymbol{x}^{'} }^{T}\boldsymbol{P}\boldsymbol{w}_{1} &= \left ( (\boldsymbol{P}\boldsymbol{w}_1)^{T}\boldsymbol{x}^{'} \right )^{T}
+= (\boldsymbol{w}^{T}_{1} \boldsymbol{P}^{T} \boldsymbol{x}^{'})^{T}
+= \boldsymbol{w}^{T}_{1} \boldsymbol{P}^{T} \boldsymbol{x}^{'} \\
+{\boldsymbol{x}^{'} }^{T}\boldsymbol{P}\boldsymbol{w}_{2} &= \left ( (\boldsymbol{P}\boldsymbol{w}_2)^{T}\boldsymbol{x}^{'} \right )^{T}
+= (\boldsymbol{w}^{T}_{2} \boldsymbol{P}^{T} \boldsymbol{x}^{'})^{T}
+= \boldsymbol{w}^{T}_{2} \boldsymbol{P}^{T} \boldsymbol{x}^{'}
+\end{aligned}
+$$
+を用いました。$\boldsymbol{w}^{T}_{1} \boldsymbol{P}^{T} \boldsymbol{x}^{'}$が$1\times 1$行列になることから$(\boldsymbol{w}^{T}_{1} \boldsymbol{P}^{T} \boldsymbol{x}^{'})^{T}
+= \boldsymbol{w}^{T}_{1} \boldsymbol{P}^{T} \boldsymbol{x}^{'}$が成り立ちます。そして、$\boldsymbol{w}_{1}$、$\boldsymbol{w}_{2}$で偏微分して$E$が小さくなる時を求めると
 
 $$
 \begin{aligned}
-\frac{\partial E}{\partial w_{1}}=-2P^{T}X^{'} + 2P^{T}Pw_{1}&=0\\
-2P^{T}w_{1}&=2P^{T}X^{'}\\
-w_{1}&=(P^{T}P)^{-1}P^{T}X^{'}\\
-\frac{\partial E}{\partial w_{2}}=-2P^{T}Y^{'} + 2P^{T}Pw_{2}&=0\\
-2P^{T}w_{2}&=2P^{T}Y^{'}\\
-w_{2}&=(P^{T}P)^{-1}P^{T}Y^{'}
+\frac{\partial E}{\partial \boldsymbol{w}_{1}}=-2\boldsymbol{P}^{T}\boldsymbol{x}^{'}  + 2\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{1}&=0\\
+2\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{1}&=2\boldsymbol{P}^{T}\boldsymbol{x}^{'} \\
+\boldsymbol{w}_{1}&=(\boldsymbol{P}^{T}\boldsymbol{P})^{-1}\boldsymbol{P}^{T}\boldsymbol{x}^{'} \\
+\frac{\partial E}{\partial \boldsymbol{w}_{2}}=-2\boldsymbol{P}^{T}\boldsymbol{y}^{'}  + 2\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{2}&=0\\
+2\boldsymbol{P}^{T}\boldsymbol{P}\boldsymbol{w}_{2}&=2\boldsymbol{P}^{T}\boldsymbol{y}^{'} \\
+\boldsymbol{w}_{2}&=(\boldsymbol{P}^{T}\boldsymbol{P})^{-1}\boldsymbol{P}^{T}\boldsymbol{y}^{'} 
 \end{aligned}
 $$
 
-これにより$w_1$、$w_2$を求められたのでアフィン行列を求められました。
+これにより$\boldsymbol{w}_{1}$、$\boldsymbol{w}_{2}$を求められたのでアフィン行列は
+$$
+A=
+\left(
+\begin{array}{c}
+&\boldsymbol{w}_{1}^{T} &\\
+&\boldsymbol{w}_{2}^{T} &\\
+0&0&1
+\end{array}
+\right)
+$$
+として求められました。
 
 ## 実装
-Pythonでnumpyだけ使って実装して終わります。
+Pythonで実装して終わります。
 
 ```python
 import numpy as np

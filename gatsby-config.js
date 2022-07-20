@@ -45,5 +45,17 @@ module.exports = {
     },
     "gatsby-transformer-sharp",
     `gatsby-plugin-sitemap`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: "mgmagchi",
+        short_name: "magchi",
+        start_url: "/",
+        background_color: "#bcb7e6",
+        theme_color: "#921d77",
+        display: "standalone",
+        icon: "src/images/favicon.png",
+      },
+    },
   ]
 };

@@ -19,6 +19,11 @@
     color: black;
 }
 
+.nav-link-title {
+    color: #8292a2;
+    text-decoration: none;
+}
+
 .site-title {
     font-size: 1.5rem;
     color: gray;
