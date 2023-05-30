@@ -1,9 +1,8 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, {useEffect, useRef} from "react";
 import * as THREE from 'three'
 import {Canvas, useFrame} from "@react-three/fiber";
 import {OrbitControls, TransformControls, ContactShadows, useGLTF, useCursor} from '@react-three/drei'
-import {canvasSquare} from "./three.module.css"
-import {typeOf} from "../../../.cache/page-ssr/routes/render-page";
+import {canvasSquare} from "../../src/components/three/three.module.css"
 
 const LLG = (props) => {
     const refArrowBeff = useRef(null)
@@ -31,31 +30,32 @@ const LLG = (props) => {
     const colorDamping = 0x005DFF;
 
     useFrame((state, delta, frame) => {
-        vecBeff.setY(props.Beff.current.value)
+        const dt = delta
+        vecBeff.setY(parseFloat(props.Beff.current.value))
         refArrowBeff.current?.setDirection(vecBeff);
         refArrowBeff.current?.setLength(vecBeff.length())
 
-        gamma = props.gamma.current.value
-        alpha = props.alpha.current.value
+        gamma = parseFloat(props.gamma.current.value)
+        alpha = parseFloat(props.alpha.current.value)
 
         const k1 = vecM.clone().multiplyScalar(-gamma / (1 + alpha ** 2)).cross(vecBeff);
         k1.add(vecM.clone().cross(k1).multiplyScalar(alpha))
-        k1.multiplyScalar(delta)
+        k1.multiplyScalar(dt)
 
         const vecM_k1 = vecM.clone().add(k1.clone().divideScalar(2));
         const k2 = vecM_k1.clone().multiplyScalar(-gamma / (1 + alpha ** 2)).cross(vecBeff);
         k2.add(vecM_k1.cross(k2).multiplyScalar(alpha));
-        k2.multiplyScalar(delta);
+        k2.multiplyScalar(dt);
 
         const vecM_k2 = vecM.clone().add(k2.clone().divideScalar(2));
         const k3 = vecM_k2.clone().multiplyScalar(-gamma / (1 + alpha ** 2)).cross(vecBeff);
         k3.add(vecM_k2.cross(k3).multiplyScalar(alpha));
-        k3.multiplyScalar(delta);
+        k3.multiplyScalar(dt);
 
         const vecM_k3 = vecM.clone().add(k3)
         const k4 = vecM_k3.clone().multiplyScalar(-gamma / (1 + alpha ** 2)).cross(vecBeff);
         k4.add(vecM_k2.cross(k4).multiplyScalar(alpha));
-        k4.multiplyScalar(delta);
+        k4.multiplyScalar(dt);
 
         const k = k1.clone().add(k2.multiplyScalar(2))
         k.add(k3.multiplyScalar(2))
@@ -92,14 +92,14 @@ const LLG = (props) => {
     );
 };
 
-const Display = () => {
+const Fig1 = () => {
     const BeffRef = useRef(null)
     const alpheRef = useRef(null)
     const gammaRef = useRef(null)
     useEffect(() => {
         BeffRef.current.value = 1
         alpheRef.current.value = 0.1
-        gammaRef.current.value = 0.01
+        gammaRef.current.value = 0.1
     },[])
     return (
         <div className={canvasSquare}>
@@ -115,4 +115,4 @@ const Display = () => {
     )
 }
 
-export default Display
+export default Fig1

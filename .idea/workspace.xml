@@ -1,313 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="">
-      <change afterPath="$PROJECT_DIR$/blog/blog/llg-equation/fig.js" afterDir="false" />
+    <list default="true" id="8c300e92-92eb-4fea-b03b-9a0f4ed23ea0" name="変更" comment="変更">
+      <change afterPath="$PROJECT_DIR$/blog/blog/jones-matrix-for-mo/index.mdx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/llg-equation/index.mdx" beforeDir="false" afterPath="$PROJECT_DIR$/blog/blog/llg-equation/index.mdx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/blog/llg-equation/llg.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/three/llg.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/AnimationClipCreator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/BlendCharacter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/BlendCharacterGui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/BufferGeometryUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Car.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Cloth.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/CurveExtras.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Detector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Encodings.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/GPUComputationRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/GPUParticleSystem.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Gyroscope.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Half.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ImprovedNoise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/MD2Character.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/MD2CharacterComplex.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/MarchingCubes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Mirror.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/MorphAnimMesh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/MorphAnimation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Ocean.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Octree.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/PRNG.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ParametricGeometries.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/RollerCoaster.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ShaderGodRays.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ShaderSkin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ShaderTerrain.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ShaderToon.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/SimplexNoise.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/SimulationRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/SkyShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ThreeBSP.coffee" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ThreeBSP.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/TimelinerController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Tween.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/TypedArrayUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/UCSCharacter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ViveController.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/Volume.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/VolumeSlice.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/WaterShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/WebVR.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/ammo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/animation/CCDIKSolver.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/animation/MMDPhysics.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/cameras/CinematicCamera.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/cameras/CombinedCamera.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/chroma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/DeviceOrientationControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/DragControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/EditorControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/FirstPersonControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/FlyControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/MouseControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/OrbitControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/OrthographicTrackballControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/PointerLockControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/TrackballControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/TransformControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/controls/VRControls.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/crossfade/gui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/crossfade/scenes.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/crossfade/transition.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/curves/NURBSCurve.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/curves/NURBSSurface.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/curves/NURBSUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/d3-threeD.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/dat.gui.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/dat.gui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/effects/AnaglyphEffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/effects/AsciiEffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/effects/CardboardEffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/effects/ParallaxBarrierEffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/effects/PeppersGhostEffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/effects/StereoEffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/effects/VREffect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/exporters/OBJExporter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/exporters/STLBinaryExporter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/exporters/STLExporter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/exporters/TypedGeometryExporter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/geometries/ConvexGeometry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/geometries/DecalGeometry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/geometries/TeapotBufferGeometry.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/geometries/hilbert2D.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/geometries/hilbert3D.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/ammo.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/charsetencoder.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/dat.gui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/earcut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/inflate.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/jszip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/msgpack-js.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/pnltri.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/stats.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/system.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/timeliner_gui.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/tween.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/zlib_and_gzip.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/libs/zlib_and_gzip.min.js.map" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/css/literally.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/alpha.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/eraser.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/eyedropper.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/hue.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/line.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/pan.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/pencil.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/rectangle.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/saturation.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/img/screenshot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/jquery-1.8.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/js/literallycanvas.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/js/literallycanvas.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/literally/underscore-1.4.2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/3MFLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/AMFLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/AWDLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/AssimpJSONLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/BabylonLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/BinaryLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ColladaLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ColladaLoader2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/DDSLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/FBXLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/GLTFLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/HDRCubeTextureLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/KMZLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/MD2Loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/MMDLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/MTLLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/NRRDLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/OBJLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/PCDLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/PDBLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/PLYLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/PVRLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/PlayCanvasLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/RGBELoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/STLLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/SVGLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/TGALoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/UTF8Loader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/VRMLLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/VTKLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/collada/Animation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/collada/AnimationHandler.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/collada/KeyFrameAnimation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ctm/CTMLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ctm/CTMWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ctm/ctm.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ctm/license/OpenCTM.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ctm/license/js-lzma.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ctm/license/js-openctm.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/ctm/lzma.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/deprecated/SceneLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/gltf/glTF-parser.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/gltf/glTFAnimation.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/gltf/glTFLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/gltf/glTFLoaderUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/gltf/glTFShaders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/gltf/gltfUtilities.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/sea3d/SEA3D.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/sea3d/SEA3DDeflate.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/sea3d/SEA3DLZMA.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/sea3d/SEA3DLegacy.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/loaders/sea3d/SEA3DLoader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/math/ColorConverter.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/math/Lut.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/modifiers/BufferSubdivisionModifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/modifiers/ExplodeModifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/modifiers/SubdivisionModifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/modifiers/TessellateModifier.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/BuilderNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/ConstNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/FunctionCallNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/FunctionNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/GLNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/InputNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/NodeLib.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/NodeMaterial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/RawNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/TempNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/CameraNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/ColorsNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/LightNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/NormalNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/PositionNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/ReflectNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/ScreenUVNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/accessors/UVNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/ColorNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/CubeTextureNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/FloatNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/IntNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/Matrix4Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/MirrorNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/ScreenNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/TextureNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/Vector2Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/Vector3Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/inputs/Vector4Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/materials/PhongNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/materials/PhongNodeMaterial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/materials/StandardNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/materials/StandardNodeMaterial.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/math/Math1Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/math/Math2Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/math/Math3Node.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/math/OperatorNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/postprocessing/NodePass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/ColorAdjustmentNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/JoinNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/LuminanceNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/NoiseNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/NormalMapNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/ResolutionNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/RoughnessToBlinnExponentNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/SwitchNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/TimerNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/nodes/utils/VelocityNode.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/objects/ShadowMesh.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/perlin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/physi.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/physijs_worker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/pmrem/PMREMCubeUVPacker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/pmrem/PMREMGenerator.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/AdaptiveToneMappingPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/BloomPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/BokehPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/ClearPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/DotScreenPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/EffectComposer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/FilmPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/GlitchPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/ManualMSAARenderPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/MaskPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/RenderPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/SMAAPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/SavePass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/ShaderPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/TAARenderPass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/postprocessing/TexturePass.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/CSS2DRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/CSS3DRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/CanvasRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/Projector.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/RaytracingRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/RaytracingWorker.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/SVGRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/renderers/SoftwareRenderer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/BasicShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/BleachBypassShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/BlendShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/BokehShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/BokehShader2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/BrightnessContrastShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/ColorCorrectionShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/ColorifyShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/ConvolutionShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/CopyShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/DOFMipMapShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/DigitalGlitch.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/DotScreenShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/EdgeShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/EdgeShader2.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/FXAAShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/FilmShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/FocusShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/FresnelShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/GammaCorrectionShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/HorizontalBlurShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/HorizontalTiltShiftShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/HueSaturationShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/KaleidoShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/LuminosityShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/MirrorShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/NormalMapShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/OceanShaders.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/ParallaxShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/RGBShiftShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/SMAAShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/SSAOShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/SepiaShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/TechnicolorShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/ToneMapShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/TriangleBlurShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/UnpackDepthRGBAShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/VerticalBlurShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/VerticalTiltShiftShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/shaders/VignetteShader.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/spin.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/stats.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/stats.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/three.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/three.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/utils/GeometryUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/utils/ImageUtils.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/utils/ShadowMapViewer.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/libs/utils/UVsDebug.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/src/components/three/three.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/components/three/three.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/test/LLG.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -388,6 +84,8 @@
       <workItem from="1658298548700" duration="6806000" />
       <workItem from="1658458696630" duration="8851000" />
       <workItem from="1659402400229" duration="2000" />
+      <workItem from="1663933004897" duration="3409000" />
+      <workItem from="1678235674996" duration="64000" />
     </task>
     <task id="LOCAL-00001" summary="reset">
       <created>1656992512699</created>
@@ -550,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658304281140</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="変更">
+      <created>1663933049804</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1663933049804</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -591,6 +296,7 @@
     <MESSAGE value="delete ploty &#10;add post" />
     <MESSAGE value="add remark image" />
     <MESSAGE value="add syntax" />
-    <option name="LAST_COMMIT_MESSAGE" value="add syntax" />
+    <MESSAGE value="変更" />
+    <option name="LAST_COMMIT_MESSAGE" value="変更" />
   </component>
 </project>

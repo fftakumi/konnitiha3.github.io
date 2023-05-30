@@ -1,0 +1,47 @@
+---
+title: "ルンゲ=クッタ法でLLG方程式"
+date: "2022-07-05"
+---
+import Fig1 from "./fig";
+
+<Fig1/>
+<br/>
+
+# LLG方程式
+まず、LLG方程式は
+$$
+\dfrac{d \boldsymbol{M}}{dt} = -\gamma \boldsymbol{M} \times \boldsymbol{B}_{eff} + \dfrac{\alpha}{M_s} \boldsymbol{M} \times \dfrac{d\boldsymbol{M}}{dt}
+$$
+と表せられる磁場中での磁気モーメントの歳差運動を示す微分方程式です。これをルンゲ=クッタ法を用いて微分方程式を数値的に解いて行きます。
+lLG方程式の右辺の$\dfrac{d \boldsymbol{M}}{dt}$に
+
+# ルンゲ=クッタ法
+ルンゲ=クッタ法は常微分方程式を数値的に解いていく方法で、オイラー法よりも誤差が少ないです。常微分方程式を
+$$
+\dfrac{dy}{dx}=f(x,y)
+$$
+として表すとき、
+$$
+\begin{aligned}
+y_{i+1} &= y_i + \dfrac{1}{6}(k_1 + 2k_2 + 2k_3 + k_4) \\
+k_1 &=hf(x_i , y_i) \\
+k_2 &=hf \left( x_i + \dfrac{h}{2}, y_i + \dfrac{k_1}{2} \right) \\
+k_3 &=hf \left( x_i + \dfrac{h}{2}, y_i + \dfrac{k_2}{2} \right) \\
+k_4 &=hf(x_i + h, y_i + k_3) \\
+\end{aligned}
+$$
+として、$y$を更新していくことで微分方程式を解けます。
+
+# ルンゲクッタ法でLLG方程式を解く
+LLG方程式の常微分方程式は上述した通り、
+$$
+\dfrac{d \boldsymbol{M}}{dt} = -\dfrac{\gamma}{1+\alpha^2} \boldsymbol{M} \times \boldsymbol{H_{eff}} -\dfrac{\gamma \alpha}{(1+\alpha^2)M_s} \boldsymbol{M} \times \left( \boldsymbol{M} \times \boldsymbol{H_{eff}} \right)
+$$
+ですが、直行座標系で回転を扱うと、誤差が生じるので、磁化のベクトルと、有効磁場のベクトルを極座標に直します。
+
+ですので、ルンゲ=クッタ法で解く場合、
+$$
+\dfrac{d　\boldsymbol{M}}{dt}=f(\boldsymbol{M},t) \\
+f(M,t)=-\dfrac{\gamma}{1+\alpha^2} \boldsymbol{M} \times \boldsymbol{H_{eff}} -\dfrac{\gamma \alpha}{(1+\alpha^2)M_s} \boldsymbol{M} \times \left( \boldsymbol{M} \times \boldsymbol{H_{eff}} \right)
+$$
+となるため、

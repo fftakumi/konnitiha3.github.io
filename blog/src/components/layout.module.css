@@ -1,0 +1,43 @@
+.container {
+    margin: auto;
+    max-width: 600px;
+    font-family: sans-serif;
+}
+
+.heading {
+    color: rebeccapurple;
+}
+.nav-links {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+}
+.nav-link-item {
+    padding-right: 2rem;
+}
+.nav-link-text {
+    color: black;
+}
+
+.nav-link-title {
+    color: #8292a2;
+    text-decoration: none;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    color: gray;
+    font-weight: 700;
+    padding: 1rem 1rem;
+    font-family: sans-serif;
+    /*background: -moz-linear-gradient(left, #d1c6f3, #e9bcac);
+    background: -webkit-linear-gradient(left, #d1c6f3, #e9bcac);
+    background: linear-gradient(to right, #d1c6f3, #e9bcac);*/
+    background-color: #d1c6f3;
+}
+
+.site-footer {
+    width: 100%;
+    height: 2rem;
+    background-color: #d1c6f3;
+}
