@@ -9,23 +9,25 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
-        gatsbyRemarkPlugins: [
-          "gatsby-remark-prismjs",
-          {
-            resolve: `gatsby-remark-images`,
-            options: {
-              maxWidth: 1200,
+        mdxOptions: {
+          gatsbyRemarkPlugins: [
+            "gatsby-remark-prismjs",
+            {
+              resolve: `gatsby-remark-images`,
+              options: {
+                maxWidth: 1200,
+              },
             },
-          },
-        ],
-        remarkPlugins: [
-          require('remark-math'),
-        ],
-        rehypePlugins: [
-          require('rehype-katex'),
-          // オプションを渡したい時はタプル形式で
-          // [require('rehype-katex'), { strict: 'ignore' }],
-        ],
+          ],
+          remarkPlugins: [
+            import('remark-math'),
+          ],
+          rehypePlugins: [
+            import('rehype-katex'),
+            // オプションを渡したい時はタプル形式で
+            // [require('rehype-katex'), { strict: 'ignore' }],
+          ],
+        },
       }
     },
     "gatsby-plugin-sharp",
