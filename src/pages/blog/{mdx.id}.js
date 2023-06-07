@@ -6,7 +6,7 @@ import Layout from '../../components/layout'
 
 import 'katex/dist/katex.min.css'
 
-const BlogPost = ({ data }) => {
+const BlogPost = ({ data }, children) => {
     const image = getImage(data.mdx.frontmatter.hero_image)
     return (
         <Layout pageTitle={data.mdx.frontmatter.title}>
@@ -24,6 +24,7 @@ const BlogPost = ({ data }) => {
             <MDXRenderer>
                 {data.mdx.body}
             </MDXRenderer>
+            {children}
         </Layout>
     )
 }
@@ -31,7 +32,6 @@ const BlogPost = ({ data }) => {
 export const query = graphql`
   query($id: String) {
     mdx(id: {eq: $id}) {
-      body
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

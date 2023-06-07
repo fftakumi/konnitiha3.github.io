@@ -1,0 +1,15 @@
+.custom-button {
+    padding: 10px 2em 10px 2em;
+    margin:10px;
+    background-color: white;
+    border-color: #d1c6f3;
+    border-radius: 5px;
+}
+
+.custom-card {
+    padding: 1em;
+    margin: 5px;
+    border-radius: 5px;
+    border:solid 1px #d4c5ff;
+    width: fit-content;
+}

@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Button, Card } from "../../../src/components/commons";
 class Matrix extends React.Component {
     constructor(props) {
         super(props);
@@ -15,23 +15,28 @@ class Matrix extends React.Component {
             B: 0,
             k: 1,
             T: 1,
-            step: 1000
+            step: 100000000,
+            nowStep: 0,
+            intervel: 0
         }
 
         this.canvasWidth = 100;
         this.canvasHeight = 100;
         this.row = props.row;
         this.col = props.col;
-        this.matrix = Array.from(new Array(this.row), _ => new Array(this.col).fill().map(e => 0));
-        this.isUpdate = false;
+        this.matrix = Array.from(new Array(this.row), _ => new Array(this.col).fill().map(e => 1));
+
+        this.animationIds = null;
+        this.montecarloStepCalcTime = 1; //ms
+        this.fps = 60;
 
         this.randomSetUp = this.randomSetUp.bind(this);
         this.draw = this.draw.bind(this);
         this.calcParams = this.calcParams.bind(this);
         this.hamiltonian = this.hamiltonian.bind(this);
         this.montecarloStep = this.montecarloStep.bind(this);
-        this.montecarlo = this.montecarlo.bind(this);
-        this.tick = this.tick.bind(this);
+        this.startMontecarlo = this.startMontecarlo.bind(this);
+        this.renderCanvas = this.renderCanvas.bind(this);
     }
 
     randomSetUp() {
@@ -42,6 +47,12 @@ class Matrix extends React.Component {
         })
         this.draw();
         this.calcParams();
+        this.setState({
+            nowStep: 0
+        });
+        if (this.animationIds) {
+            cancelAnimationFrame(this.animationIds);
+        }
     }
 
     hamiltonian(i, j) {
@@ -54,25 +65,38 @@ class Matrix extends React.Component {
     }
 
     montecarloStep(i, j) {
-        for (let i = 0; i < this.row; i++) {
-            for (let j = 0; j < this.col; j++) {
-                const hm1 = this.hamiltonian(i, j);
-                this.matrix[i][j] *= -1;
-                const hm2 = this.hamiltonian(i, j);
-                const r = Math.exp(hm1 - hm2 / (this.state.k * this.state.T));
-                if (Math.random() >= r) {
-                    this.matrix[i][j] *= -1;
-                }
+        const hm1 = this.hamiltonian(i, j);
+        this.matrix[i][j] *= -1;
+        const hm2 = this.hamiltonian(i, j);
+        const r = Math.exp(hm1 - hm2 / (this.state.k * this.state.T));
+        if (Math.random() >= r) {
+            this.matrix[i][j] *= -1;
+        }
+    }
+
+    startMontecarlo() {
+        this.renderCanvas();
+    }
+
+    renderCanvas(context) {
+        // アロー関数で this を bind しておく
+        this.animationIds = requestAnimationFrame(this.renderCanvas);
+
+        let startCalcTime = Date.now();
+        let count = 0;
+        while (1000 / this.fps > Date.now() - startCalcTime) {
+            this.montecarloStep(Math.floor(Math.random() * this.row), Math.floor(Math.random() * this.col));
+            count++;
+            if (this.state.step <= this.state.nowStep + count) {
+                cancelAnimationFrame(this.animationIds);
+                break;
             }
         }
         this.draw();
         this.calcParams();
-    }
-
-    montecarlo() {
-        for (let i = 0; i < this.state.step; i++) {
-            this.montecarloStep(Math.floor(Math.random() * this.row), Math.floor(Math.random() * this.col));
-        }
+        this.setState({
+            nowStep: this.state.nowStep + count
+        });
     }
 
     calcParams() {
@@ -99,18 +123,9 @@ class Matrix extends React.Component {
                 ctx.fillRect(cellWidth * j, cellHeght * i, cellWidth, cellHeght);
             })
         })
-        setInterval(()=>{}, 10);
-    }
-
-    tick() {
-        if (this.isUpdate) {
-            this.draw();
-            this.requestAnime.current = requestAnimationFrame(this.tick);
-        }
     }
 
     componentDidMount() {
-        //this.requestAnime.current = requestAnimationFrame(this.tick);
         const ctx = this.matrixCanvas.current.getContext("2d");
         this.canvasWidth = ctx.canvas.width;
         this.canvasHeight = ctx.canvas.height;
@@ -131,14 +146,23 @@ class Matrix extends React.Component {
         return (
             <>
                 <div>
-                    <button ref={this.randomButton} onClick={this.randomSetUp}>random</button>
-                    <button onClick={this.montecarlo}>montecarlo</button>
-                    <label>j</label><input type="number" value={this.state.j} onChange={(e) => { this.setState({ j: e.target.value }) }} />
-                    <label>B</label><input type="number" value={this.state.B} onChange={(e) => { this.setState({ B: e.target.value }) }} />
+                    <Card>
+                        <span>初期化</span><br/>
+                        <Button ref={this.randomButton} onClick={this.randomSetUp}>random</Button>
+                        <Button onClick={this.startMontecarlo}>montecarlo</Button>
+                    </Card>
+                    <Card>
+                        <label>$$j$$</label><input type="number" value={this.state.j} onChange={(e) => { this.setState({ j: e.target.value }) }} />
+                        <label>B</label><input type="number" value={this.state.B} onChange={(e) => { this.setState({ B: e.target.value }) }} />
+                    </Card>
                     <p>{this.state.aveM}</p>
                     <p>{this.state.ps}</p>
+                    <p>{this.state.nowStep}</p>
                 </div>
-                <canvas ref={this.matrixCanvas} />
+                <canvas ref={this.matrixCanvas} style={{
+                    width: "100%",
+                    aspectRatio: 1
+                }} />
             </>
         );
     }

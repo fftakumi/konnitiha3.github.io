@@ -1,3 +1,12 @@
+const wrapESMPlugin = name =>
+  function wrapESM(opts) {
+    return async (...args) => {
+      const mod = await import(name)
+      const plugin = mod.default(opts)
+      return plugin(...args)
+    }
+  }
+
 module.exports = {
   siteMetadata: {
     title: `magmagchi`,
@@ -5,10 +14,10 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    "gatsby-plugin-mdx",
     {
       resolve: 'gatsby-plugin-mdx',
       options: {
+        extensions: [".mdx", ".md", ".markdown"],
         mdxOptions: {
           gatsbyRemarkPlugins: [
             "gatsby-remark-prismjs",
@@ -20,10 +29,10 @@ module.exports = {
             },
           ],
           remarkPlugins: [
-            import('remark-math'),
+            wrapESMPlugin('remark-math'),
           ],
           rehypePlugins: [
-            import('rehype-katex'),
+            wrapESMPlugin('rehype-katex'),
             // オプションを渡したい時はタプル形式で
             // [require('rehype-katex'), { strict: 'ignore' }],
           ],
