@@ -14,31 +14,8 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    {
-      resolve: 'gatsby-plugin-mdx',
-      options: {
-        extensions: [".mdx", ".md", ".markdown"],
-        mdxOptions: {
-          gatsbyRemarkPlugins: [
-            "gatsby-remark-prismjs",
-            {
-              resolve: `gatsby-remark-images`,
-              options: {
-                maxWidth: 1200,
-              },
-            },
-          ],
-          remarkPlugins: [
-            wrapESMPlugin('remark-math'),
-          ],
-          rehypePlugins: [
-            wrapESMPlugin('rehype-katex'),
-            // オプションを渡したい時はタプル形式で
-            // [require('rehype-katex'), { strict: 'ignore' }],
-          ],
-        },
-      }
-    },
+    `gatsby-plugin-mdx`,
+    "gatsby-plugin-slug",
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-source-filesystem",

@@ -10,7 +10,7 @@ const BlogPage = ({ data }) => {
         <Layout pageTitle="My Blog Posts">
             {
                 data.allMdx.nodes.map(node => (
-                    <BlogCard slug={node.slug} title={node.frontmatter.title} date={node.frontmatter.date}/>
+                    <BlogCard slug={node.fields.slug} title={node.frontmatter.title} date={node.frontmatter.date}/>
                 ))
             }
         </Layout>
@@ -24,6 +24,9 @@ export const query = graphql`
         frontmatter {
           date
           title
+        }
+        fields {
+          slug
         }
         id
       }

@@ -6,7 +6,7 @@ const BlogCard = ({slug, title, date}) => {
     return (
         <div className={blogCardWrapper}>
             <h2>
-                <Link to={`/blog/${slug}`}>
+                <Link to={`/blog${slug}`}>
                     {title}
                 </Link>
             </h2>

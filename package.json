@@ -29,6 +29,7 @@
     "gatsby-plugin-mdx": "^5.10.0",
     "gatsby-plugin-sharp": "^5.10.0",
     "gatsby-plugin-sitemap": "^6.10.0",
+    "gatsby-plugin-slug": "^2.0.0",
     "gatsby-remark-images": "^7.10.0",
     "gatsby-remark-prismjs": "^7.10.0",
     "gatsby-source-filesystem": "^5.10.0",
