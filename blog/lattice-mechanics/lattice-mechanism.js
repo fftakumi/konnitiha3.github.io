@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Card } from "../../src/components/commons";
+import { InlineMath, BlockMath } from "react-katex";
 class Matrix extends React.Component {
     constructor(props) {
         super(props);
@@ -152,7 +153,7 @@ class Matrix extends React.Component {
                         <Button onClick={this.startMontecarlo}>montecarlo</Button>
                     </Card>
                     <Card>
-                        <label>$$j$$</label><input type="number" value={this.state.j} onChange={(e) => { this.setState({ j: e.target.value }) }} />
+                        <label><InlineMath>j</InlineMath></label><input type="number" value={this.state.j} onChange={(e) => { this.setState({ j: e.target.value }) }} />
                         <label>B</label><input type="number" value={this.state.B} onChange={(e) => { this.setState({ B: e.target.value }) }} />
                     </Card>
                     <p>{this.state.aveM}</p>
