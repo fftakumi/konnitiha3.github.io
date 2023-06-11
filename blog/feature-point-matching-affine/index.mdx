@@ -1,6 +1,7 @@
 ---
-title: "アフィン変換を使った特徴点マッチングで雑すぎるコラ画像を作る"
-date: "2022-07-14"
+title: アフィン変換を使った特徴点マッチングで雑すぎるコラ画像を作る
+date: 2022-07-14
+slug: feature-point-matching-affine
 ---
 
 
@@ -322,9 +323,9 @@ from matplotlib import pyplot as plt
 # 参照画像の範囲超えたやつは配列の最後を参照するようにする関数
 def clip_xy(ref_xy, img_shape):
     # x座標について置換
-    ref_x = np.where((0 <= ref_xy[:, 0]) & (ref_xy[:, 0] < img_shape[1]), ref_xy[:, 0], -1)
+    ref_x = np.where((0 \<= ref_xy[:, 0]) & (ref_xy[:, 0] \< img_shape[1]), ref_xy[:, 0], -1)
     # y座標について置換
-    ref_y = np.where((0 <= ref_xy[:, 1]) & (ref_xy[:, 1] < img_shape[0]), ref_xy[:, 1], -1)
+    ref_y = np.where((0 \<= ref_xy[:, 1]) & (ref_xy[:, 1] \< img_shape[0]), ref_xy[:, 1], -1)
 
     # 結合して返す
     return np.vstack([ref_x, ref_y]).T

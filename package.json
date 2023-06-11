@@ -31,16 +31,19 @@
     "gatsby-plugin-sitemap": "^6.10.0",
     "gatsby-plugin-slug": "^2.0.0",
     "gatsby-remark-images": "^7.10.0",
+    "gatsby-remark-katex": "^7.10.0",
+    "gatsby-remark-mathjax": "^1.0.0",
     "gatsby-remark-prismjs": "^7.10.0",
     "gatsby-source-filesystem": "^5.10.0",
+    "gatsby-transformer-remark": "^6.10.0",
     "gatsby-transformer-sharp": "^5.10.0",
-    "katex": "^0.16.0",
+    "katex": "^0.13.3",
     "prismjs": "^1.28.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-loadable": "^5.5.0",
-    "rehype-katex": "5.0.0",
-    "remark-math": "5.1.1",
+    "rehype-katex": "^5.0.0",
+    "remark-math": "^3.0.1",
     "three": "^0.152.0"
   }
 }

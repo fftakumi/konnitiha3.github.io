@@ -14,7 +14,21 @@ module.exports = {
   },
   plugins: [
     "gatsby-plugin-image",
-    `gatsby-plugin-mdx`,
+    {
+      resolve: 'gatsby-plugin-mdx',
+      options: {
+        gatsbyRemarkPlugins: [
+          "gatsby-remark-prismjs",
+          "gatsby-remark-katex",
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWidth: 1200,
+            },
+          },
+        ],
+      }
+    },
     "gatsby-plugin-slug",
     "gatsby-plugin-sharp",
     {

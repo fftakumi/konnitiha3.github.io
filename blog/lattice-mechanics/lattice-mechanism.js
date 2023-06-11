@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card } from "../../../src/components/commons";
+import { Button, Card } from "../../src/components/commons";
 class Matrix extends React.Component {
     constructor(props) {
         super(props);
