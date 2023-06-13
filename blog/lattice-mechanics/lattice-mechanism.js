@@ -156,9 +156,9 @@ class Matrix extends React.Component {
                         <label><InlineMath>j</InlineMath></label><input type="number" value={this.state.j} onChange={(e) => { this.setState({ j: e.target.value }) }} />
                         <label>B</label><input type="number" value={this.state.B} onChange={(e) => { this.setState({ B: e.target.value }) }} />
                     </Card>
-                    <p>{this.state.aveM}</p>
+                    <p><InlineMath>{"|\\vec{M}|= "}</InlineMath>{this.state.aveM}</p>
                     <p>{this.state.ps}</p>
-                    <p>{this.state.nowStep}</p>
+                    <p>Montecarlo Step:{this.state.nowStep}</p>
                 </div>
                 <canvas ref={this.matrixCanvas} style={{
                     width: "100%",
