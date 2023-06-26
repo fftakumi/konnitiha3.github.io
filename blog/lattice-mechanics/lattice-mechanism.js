@@ -12,10 +12,10 @@ class Matrix extends React.Component {
             aveM: 0, // 長距離秩序
             ps: 0, // 短距離秩序
             Hm: 0, // ハミルトニアン
-            j: 1,
+            j: 0.5,
             B: 0,
             k: 1,
-            T: 1,
+            T: 4,
             step: 100000000,
             nowStep: 0,
             intervel: 0
@@ -80,7 +80,6 @@ class Matrix extends React.Component {
     }
 
     renderCanvas(context) {
-        // アロー関数で this を bind しておく
         this.animationIds = requestAnimationFrame(this.renderCanvas);
 
         let startCalcTime = Date.now();
@@ -153,11 +152,14 @@ class Matrix extends React.Component {
                         <Button onClick={this.startMontecarlo}>montecarlo</Button>
                     </Card>
                     <Card>
-                        <label><InlineMath>j</InlineMath></label><input type="number" value={this.state.j} onChange={(e) => { this.setState({ j: e.target.value }) }} />
-                        <label>B</label><input type="number" value={this.state.B} onChange={(e) => { this.setState({ B: e.target.value }) }} />
+                        <span>設定</span>
+                        <p><label><InlineMath>j</InlineMath>:</label><input type="number" value={this.state.j} onChange={(e) => { this.setState({ j: e.target.value }) }} /></p>
+                        <p><label><InlineMath>B</InlineMath>:</label><input type="number" value={this.state.B} onChange={(e) => { this.setState({ B: e.target.value }) }} /></p>
+                        <p><label><InlineMath>k_B</InlineMath>:</label><input type="number" value={this.state.k} onChange={(e) => { this.setState({ k: e.target.value }) }} /></p>
+                        <p><label><InlineMath>T</InlineMath>:</label><input type="number" value={this.state.T} onChange={(e) => { this.setState({ T: e.target.value }) }} /></p>
                     </Card>
+                    <p><InlineMath>{"\\dfrac{j}{k_B T}="}</InlineMath> {this.state.j/(this.state.k * this.state.T)}</p>
                     <p><InlineMath>{"|\\vec{M}|= "}</InlineMath>{this.state.aveM}</p>
-                    <p>{this.state.ps}</p>
                     <p>Montecarlo Step:{this.state.nowStep}</p>
                 </div>
                 <canvas ref={this.matrixCanvas} style={{

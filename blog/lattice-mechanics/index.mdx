@@ -1,14 +1,13 @@
 ---
-title: 格子力学
+title: ReactでCanvasの挙動のテストついでにイジングモデルの層転移シュミレーション
 date: 2023-05-28
 slug: lattice-mechanics
 ---
 
 import Matrix from "./lattice-mechanism";
 
-# ReactでCanvasの挙動のテストついでにイジングモデルの層転移シュミレーション
-ハミルトニアンは以下に示す式に従うとし、周期境界条件の元で行う
 $$
-H=\sum jm_i m_j + B\sum m
+H=\sum_{<ij>} js_i s_j - B\sum_i s_i
 $$
-<Matrix row={100} col={100}/>
+
+<Matrix row={200} col={200}/>
